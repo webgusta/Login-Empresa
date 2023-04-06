@@ -1,0 +1,13 @@
+index.php - Formulário de login. Local onde o usuário vai digitar o seu login e senha.
+
+login.php - Recebe o login e senha para enviar para a função que vai validar no banco. Pode ser colocado aqui as validações do formulário.
+
+validarUsuario.php - Tem a função de validar o usuario no banco de dados. Recebe o usuário e senha do arquivo login.php através de uma chamada de função.
+
+sair.php - Destroi a sessão do usuário, o nosso logout.
+
+area-restrita.php e area-restrita-dois.php - Área somente para usuários logados.
+
+restrito.php - Verifica se a sessão está ativa, caso não esteja encaminha o usuário para o index.php para realizar o login, esta sendo utilizado como include nas áreas restritas.
+
+validarFormulario.php - Funções de validação do formulário de login, não esta sendo utilizado.
